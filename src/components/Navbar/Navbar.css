@@ -1,0 +1,29 @@
+.app__logo {
+  width: 90px;
+}
+.app__homepage {
+  background: transparent;
+}
+
+.white__color {
+  color: #ffffff !important;
+}
+.app__search__bar {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.app__search__bar:focus {
+  border-color: #fbbc04;
+  outline: none;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  background: wheat;
+}

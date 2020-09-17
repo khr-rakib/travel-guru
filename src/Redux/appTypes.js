@@ -1,0 +1,2 @@
+export const BOOKING_INFO = "BOOKING_INFO";
+export const LOGGEDIN_USER_INFO = "LOGGEDIN_USER_INFO";

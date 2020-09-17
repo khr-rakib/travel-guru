@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+.app__homepage {
+  height: 100vh;
+  background-image: url("./Assets/home-bg.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__homepage::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 200px;
+  background: rgba(0, 0, 0, 0.7);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pd__top {
+  padding: 200px 0 !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app__btn {
+  border: none;
+  border-radius: 7px;
+  padding: 5px 20px !important;
+  background: #fbbc04;
+}
+.home__item__description {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.home__item__description h1 {
+  font-size: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider__image {
+  width: 200px !important;
+}
+.tour__item {
+  cursor: pointer;
+}
+.tour__item img {
+  width: 230px;
+}
+.tour__item__container {
+  display: flex;
+  justify-content: space-between;
+}
+.tour__item:active {
+  border: 3px solid #fbbc04;
+
+  border-radius: 20px;
+}
+.tour__item p {
+  margin-top: -35px;
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.booking__form {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.booking__form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.booking__form__group label {
+  margin-bottom: 3px;
+  font-weight: 300;
+}
+
+.booking__form__group input {
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.booking__form__group input:focus {
+  outline-color: #fbbc04;
+}
+.booking__form__calendar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__form__btn {
+  margin-top: 15px;
+  border: none;
+  padding: 7px 0;
+  border-radius: 3px;
+  background: #fbbc04;
+  cursor: pointer;
+}
+
+.booking__form__btn:focus {
+  outline: none;
+}
+
+.hotel__item__left img {
+  width: 231px;
+}
+
+.hotel__item {
+  display: flex;
+  margin: 10px 0;
+}
+
+.hotel__item__left {
+  margin-right: 20px;
+}
+
+.hotel__item__right h5 {
+  margin-bottom: 3px;
+}
+
+.hotel__item__right p img {
+  width: 25px;
+}
+
+.hotel__item__right p {
+  margin-bottom: 5px;
+}
+
+.app__iframe {
+  width: 100%;
+  height: 560px;
+  border-radius: 10px;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.login__social button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.login__social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login__social button {
+  border: navajowhite;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login__social button:hover {
+  background: #fbbc04;
 }
